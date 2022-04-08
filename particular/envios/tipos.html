@@ -1,0 +1,291 @@
+<!--
+     Course: Maquetando con BootStrap 4
+     By: OpenWebinars.net
+     File: template.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Plantilla HTML con los enlaces necesarios para el resto del curso
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Tipos de envíos - Particulares</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Course CSS -->
+  <link rel="stylesheet" href="../../files/css/styles.css">
+
+  <script src="../../files/js/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!-- logo y encabezado página -->
+    <div class="row bg-general">
+      <div class="col mb-1 d-flex align-items-center justify-content-center">
+        <img id="logo-lima" src="../../files/img/Logo lima blaster.svg" alt="" srcset="">
+      </div>
+
+      <div class="col mb-1 d-flex align-items-center justify-content-center">
+        <a class="text-general-lima" href="../../particular/index_particular.html">
+          <h4><ins>Particular</ins></h4>
+        </a>
+        <a class="text-general-lima ml-4" href="../../empresa/index_empresa.html">
+          <h4>Empresa</h4>
+        </a>
+      </div>
+
+      <div class="col mb-1 d-flex mr-4 align-items-center justify-content-center">
+        <ul class="fa-ul">
+          <h1 class="text-general-lima">Envíos:</h1>
+          <li class="ml-5">
+            <span class="fa-li"><i style="font-size:38px;" class="fas fa-shipping-fast text-general-lima"></i></span>
+            <h2 class="text-general-lima ml-4">Particular</h2>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!--  navegacion -->
+    <div class="row">
+      <div class="col bg-general-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-general-navbar">
+          <!-- <a class="navbar-brand h5" href="#">Iber Express</a> -->
+          <img id="logo-pequeño" src="../../files/img/logo_pequeño_lima2.svg" alt="" srcset="" style="height: 38px;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-4" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item active">
+                <a class="nav-link h5" href="#">Home <span class="sr-only">(current)</span></a>
+              </li> -->
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Enviar
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#paqexpress">Paq. Express</a>
+                  <a class="dropdown-item" href="#paqstandard">Paq. Standard</a>
+                  <a class="dropdown-item" href="#paqcertificado">Paq. Certificado</a>
+                  <a class="dropdown-item" href="#sobrecertificado">Sobre Certificado</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Recibir
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="../../utilidades/localizador_envios.html">Seguimiento del Envío</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Utilidades
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="../../utilidades/localizador_envios.html">Localizador de Envíos</a>
+                  <a class="dropdown-item" href="../../utilidades/localizador_of_citypaq.html">Localizador de
+                    Oficinas</a>
+                  <a class="dropdown-item" href="../../utilidades/localizador_of_citypaq.html">Localizador de
+                    Citypaqs</a>
+                  <a class="dropdown-item" href="../../utilidades/localizador_cod_postal.html">Localizador de Cod.
+                    Postales</a>
+                  <a class="dropdown-item" href="../../utilidades/embalajes.html">Embalajes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+
+    <!-- links -->
+    <!--  <div class="row bg-light">
+      <div class="col d-flex align-items-center justify-content-start">
+        <p class="h5 text-primary">
+          <a href="https://www.google.es/">Index</a>
+        </p>
+      </div>
+    </div> -->
+
+    <!--  DATOS LOCALIZADOR ENVIOS -->
+
+    <!-- TITULO -->
+    <div class="row marginleft-10 marginright-10 mt-2">
+      <div id="div_titulo" class="col d-flex align-items-center justify-content-end">
+        <i style="font-size:38px;" class="fas fa-dolly text-general"></i>
+        <p class="h2 text-general ml-3">Tipos de Envío</p>
+      </div>
+    </div>
+
+    <!--  CONTENEDOR BORDE GRUESO -->
+    <div class="row marginleft-10 marginright-10 border border-general border-3 rounded ">
+      <div class="col mt-md-3">
+
+        <!-- CAJITAS-->
+        <div class="row marginleft-10 marginright-10">
+          <div id="paqexpress" class="col-md-6 d-flex align-items-center justify-content-center mt-5">
+            <div class="row ">
+              <div class="col">
+                <img src="../../files/img/express.jpg" alt="" srcset="" class="img-fluid rounded">
+              </div>
+              <div class="col">
+                <p class="h2 text-general">Paq. Express</p>
+                <p class="h6 text-general">Recibe tu paquete en 24h - 48h.</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Recogida (domicilio, oficina, citypaq).</li>
+                  <li class="list-group-item">Entrega (domicilio, oficina, citypaq).</li>
+                  <li class="list-group-item">Max 30 kg</li>
+                  <li class="list-group-item">Peninsula, Baleares, Canarias, Ceuta y Melilla</li>
+                  <li class="list-group-item">
+                    <h2>19.95 €</h2>
+                  </li>
+                </ul>
+                <div class="bg-general boton_enviar rounded d-flex align-items-center justify-content-center"
+                  style="width: 50%;">
+                  <i style="font-size:36px;" class="fas fa-share text-general-lima mr-2"></i>
+                  <a class="text-general-lima" href="../../particular/paqexpress/form_envio_ppaqexpress.html">
+                    <h3>Enviar</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="paqstandard" class="col-md-6 d-flex align-items-center justify-content-center mt-5">
+            <div class="row">
+              <div class="col">
+                <img src="../../files/img/standard.jpg" alt="" srcset="" class="img-fluid rounded">
+              </div>
+              <div class="col">
+                <p class="h2 text-general">Paq. Standard</p>
+                <p class="h6 text-general">Recibe tu paquete en 48h - 78h.</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Recogida (domicilio, oficina, citypaq).</li>
+                  <li class="list-group-item">Entrega (domicilio, oficina, citypaq).</li>
+                  <li class="list-group-item">Max 30 kg</li>
+                  <li class="list-group-item">Peninsula, Baleares, Canarias, Ceuta y Melilla</li>
+                  <li class="list-group-item">
+                    <h2>12.10 €</h2>
+                  </li>
+                </ul>
+                <div class="bg-general boton_enviar rounded d-flex align-items-center justify-content-center"
+                  style="width: 50%;">
+                  <i style="font-size:36px;" class="fas fa-share text-general-lima mr-2"></i>
+                  <a class="text-general-lima" href="../../particular/paqstandard/form_envio_ppaqstandard.html">
+                    <h3>Enviar</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--    SEPARADORES -->
+        <div class="row">
+          <div class="col mt-5"></div>
+        </div>
+
+        <!-- CAJITAS-->
+        <div class="row marginleft-10 marginright-10">
+          <div id="paqcertificado" class="col-md-6 d-flex align-items-center justify-content-center mt-5 mb-5">
+            <div class="row ">
+              <div class="col">
+                <img src="../../files/img/certificado3.png" alt="" srcset="" class="img-fluid rounded">
+              </div>
+              <div class="col">
+                <p class="h2 text-general">Paq. Certificado</p>
+                <p class="h6 text-general">Recibe tu paquete en 3 - 5 días.</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Recogida en oficina.</li>
+                  <li class="list-group-item">Entrega en domicilio.</li>
+                  <li class="list-group-item">Max 10 kg</li>
+                  <li class="list-group-item">Peninsula, Baleares, Canarias, Ceuta y Melilla</li>
+                  <li class="list-group-item">
+                    <h2>12.65 €</h2>
+                  </li>
+                </ul>
+                <div class="bg-general boton_enviar rounded d-flex align-items-center justify-content-center"
+                  style="width: 50%;">
+                  <i style="font-size:36px;" class="fas fa-share text-general-lima mr-2"></i>
+                  <a class="text-general-lima" href="../../particular/paqcertificado/form_envio_ppaqcertificado.html">
+                    <h3>Enviar</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="sobrecertificado" class="col-md-6 d-flex align-items-center justify-content-center mt-5 mb-5">
+            <div class="row">
+              <div class="col">
+                <img src="../../files/img/sobre.jpg" alt="" srcset="" class="img-fluid rounded">
+              </div>
+              <div class="col">
+                <p class="h2 text-general">Sobre Certificado</p>
+                <p class="h6 text-general">Recibe tu sobre en 1 - 4 días.</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Recogida (domicilio, oficina, citypaq).</li>
+                  <li class="list-group-item">Entrega (domicilio, oficina, citypaq).</li>
+                  <li class="list-group-item">Max 2 kg</li>
+                  <li class="list-group-item">Peninsula, Baleares, Canarias, Ceuta y Melilla</li>
+                  <li class="list-group-item">
+                    <h2>4.59 €</h2>
+                  </li>
+                </ul>
+                <div class="bg-general boton_enviar rounded d-flex align-items-center justify-content-center"
+                  style="width: 50%;">
+                  <i style="font-size:36px;" class="fas fa-share text-general-lima mr-2"></i>
+                  <a class="text-general-lima"
+                    href="../../particular/sobrecertificado/form_envio_psobrecertificado.html">
+                    <h3>Enviar</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

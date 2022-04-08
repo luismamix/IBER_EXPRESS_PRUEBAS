@@ -1,0 +1,219 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-family:'OrelegaOne-Regular','Times New Roman', Times, serif; */
+}
+
+input,label,button,li{
+    font-family:Arial, Helvetica, sans-serif;
+ }
+
+@font-face {
+    font-family: 'OrelegaOne-Regular';
+    src: url('../fonts/OrelegaOne-Regular.ttf') format('truetype'),
+    url('../fonts/OrelegaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+p,h1,h2,h3,h4,h5,h6{
+    font-family:'OrelegaOne-Regular','Times New Roman', Times, serif !important; 
+}
+
+/* nav .nav-item{
+    font-family:'OrelegaOne-Regular','Times New Roman', Times, serif !important; 
+}
+ */
+
+ li.nav-item a.nav-link{
+    font-family:'OrelegaOne-Regular','Times New Roman', Times, serif !important; 
+ }
+/* estilos formulario */
+.border-3{
+    border-width: 3px !important;
+}
+
+
+label{
+    display: inline-block;  
+    width: 125px;
+    text-align: left;
+}
+
+.supersizeme{
+    width: 150px;
+    text-align: left;
+}
+.marginleft-10{
+    margin-left: 10px;
+}
+
+.marginright-10{
+    margin-right: 10px;
+}
+
+
+
+/* esconder columnas tablas oficinas / citypaq */
+#r_tabla_resultado_busqueda tr > *:nth-child(4) {
+    display: none;
+}
+#r_tabla_resultado_busqueda tr > *:nth-child(5) {
+    display: none;
+}
+#e_tabla_resultado_busqueda tr > *:nth-child(4) {
+    display: none;
+}
+#e_tabla_resultado_busqueda tr > *:nth-child(5) {
+    display: none;
+}
+#l_tabla_resultado_busqueda tr > *:nth-child(4) {
+    display: none;
+}
+#l_tabla_resultado_busqueda tr > *:nth-child(5) {
+    display: none;
+}
+#l_tabla_resultado_busqueda tr > *:nth-child(6) {
+    display: none;
+}
+#l_tabla_resultado_busqueda tr > *:nth-child(7) {
+    display: none;
+}
+#l_tabla_resultado_busqueda tr > *:nth-child(8) {
+    display: none;
+}
+#l_tabla_resultado_busqueda tr > *:nth-child(9) {
+    display: none;
+}
+
+.inline_block{
+    display:inline-block;
+}
+
+.baja_altura{
+    height: 60px !important;
+}
+
+.baja_altura_2{
+    height: 130px !important;
+}
+.boton_enviar{
+    height: 60px !important;
+    width:150px !important;
+}
+/* .tamaño-img-custom{
+    height: 300px !important;
+    width:600px !important;
+} */
+.height-cajitas{
+    max-height: 470px;
+}
+.text-success-dark{
+    color:#007E33;
+}
+
+.border-5 {
+    border-width:5px !important;
+}
+
+.bg-particulares{
+    background-color: #023151;
+}
+
+.text-particulares{
+    color: #C4D9E8;
+}
+.border-particulares {
+   /*  border-color:#c6ff00 !important; */
+   border-color:#2e2e2e !important;
+}
+
+.border-empresas {
+    border-color:#c6ff00 !important;
+}
+
+.bg-empresas{
+    background-color: #004D40;
+}
+
+.text-empresas{
+    color: #64FFDA;
+}
+/* .border-3-empresas {
+    border-width:5px !important;
+    border-color:#64FFDA !important;
+    height: 100px !important;
+} */
+.bg-general{
+    background-color: #2e2e2e;
+}
+.bg-lima-invertido{
+    background-color: #c6ff00;
+}
+
+.bg-striped{
+    background-color: #BCF200 ;
+}
+.bg-general-navbar{
+    background-color: #212121;
+}
+.bg-lima-oscuro-navbar{
+    background-color: #bcf000;
+}
+.border-general{
+    border-color:#2e2e2e !important;
+}
+.text-general-lima{
+    color:#c6ff00 !important;
+}
+
+.text-general{
+    color:#2e2e2e;
+}
+
+.table-lima{
+    color:white;
+    background-color: #2e2e2e;
+}
+.table-lima-invertido{
+    color:#2e2e2e;
+    background-color: #c6ff00;
+}
+.btn-lima{
+    color:#2e2e2e;
+    background-color:#c6ff00;
+}
+.btn-lima-invertido{
+    color:white;
+    background-color:#2e2e2e;
+}
+.text-white{
+    color: white;
+}
+/* #logo-azul{
+    height: 200px;
+}  */
+
+.rotate {
+    transform: scaleX(-1);
+  }
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.transparente{
+    opacity: 0.7;
+  filter:  alpha(opacity=50);
+  background-color: #2e2e2e;
+}
+
+
+
+

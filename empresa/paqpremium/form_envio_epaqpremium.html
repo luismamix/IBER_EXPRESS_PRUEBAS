@@ -1,0 +1,805 @@
+<!--
+     Course: Maquetando con BootStrap 4
+     By: OpenWebinars.net
+     File: template.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Plantilla HTML con los enlaces necesarios para el resto del curso
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Empresa Paq. Premium</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Course CSS -->
+  <link rel="stylesheet" href="../../files/css/styles.css">
+
+  <script src="../../files/js/form_envio_epaqpremium.js"></script>
+  <script src="../../files/js/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+</head>
+
+<body>
+
+  <form action="../../files/php/registrar_envio.php" method="POST" class="was-validated">
+
+    <div class="container-fluid">
+
+      <!-- logo y encabezado página -->
+      <div class="row bg-lima-invertido">
+
+        <div class="col mb-1 d-flex align-items-center justify-content-center">
+          <img id="logo-azul" src="../../files/img/Logo lima invertido.svg" alt="" srcset="">
+        </div>
+
+        <div class="col mb-1 d-flex align-items-center justify-content-center">
+          <a class="text-general" href="../../particular/index_particular.html">
+            <h4>Particular</h4>
+          </a>
+          <a class="text-general ml-4" href="../../empresa/index_empresa.html">
+            <h4><ins>Empresa</ins></h4>
+          </a>
+        </div>
+
+        <div class="col mb-1 d-flex mr-4 align-items-center justify-content-center">
+          <ul class="fa-ul">
+            <h1 class="text-general">Envíos:</h1>
+            <li class="ml-5">
+              <span class="fa-li"><i style="font-size:38px;" class="fas fa-shipping-fast text-general"></i></span>
+              <h2 class="text-general ml-4">Paq. Premium</h2>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--  navegacion -->
+      <div class="row">
+        <div class="col bg-lima-oscuro-navbar">
+          <nav class="navbar navbar-expand-lg navbar-light bg-lima-oscuro-navbar">
+            <!-- <a class="navbar-brand h5" href="#">Iber Express</a> -->
+            <img id="logo-pequeño" src="../../files/img/logo_pequeño_blanco2.svg" alt="" srcset=""
+              style="height: 38px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-4" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item active">
+            <a class="nav-link h5" href="#">Home <span class="sr-only">(current)</span></a>
+          </li> -->
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Enviar
+                  </a>
+                  <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../envios/tipos.html">Paq. Premium</a>
+                    <a class="dropdown-item" href="../envios/tipos.html">Paq. Standard</a>
+                    <a class="dropdown-item" href="../envios/tipos.html">Paq. Today</a>
+                    <a class="dropdown-item" href="../envios/tipos.html">Paq. Ligero</a>
+                    <a class="dropdown-item" href="../envios/tipos.html">Valijas</a>
+                  </div>
+                </li>
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Recibir
+                  </a>
+                  <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../../utilidades/localizador_envios.html">Seguimiento del Envío</a>
+                  </div>
+                </li>
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Utilidades
+                  </a>
+                  <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../../utilidades/localizador_envios.html">Localizador de Envíos</a>
+                    <a class="dropdown-item" href="../../utilidades/localizador_of_citypaq.html">Localizador de
+                      Oficinas</a>
+                    <a class="dropdown-item" href="../../utilidades/localizador_of_citypaq.html">Localizador de
+                      Citypaqs</a>
+                    <a class="dropdown-item" href="../../utilidades/localizador_cod_postal.html">Localizador de Cod.
+                      Postales</a>
+                    <a class="dropdown-item" href="../../utilidades/embalajes.html">Embalajes</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- links -->
+      <!-- <div class="row bg-light">
+        <div class="col d-flex align-items-center justify-content-start">
+          <p class="h5 text-primary">
+            <a href="https://www.google.es/">Empresa</a> -
+            <a href="https://www.google.es/">Enviar</a> -
+            <a href="https://www.google.es/">Tipo_envio</a> -
+            <a href="https://www.google.es/">form_Paq_Premium</a>
+          </p>
+        </div>
+      </div> -->
+
+      <!--  DATOS REMITENTE -->
+      <div class="row marginleft-10 marginright-10">
+        <div class="col d-flex align-items-center justify-content-end">
+          <p class="h2 text-dark">Datos remitente</p>
+        </div>
+      </div>
+
+      <div class="row marginleft-10 marginright-10 border border-dark border-3 rounded ">
+
+        <!-- campos bloque izq -->
+        <div class="col-md-6 mt-md-3">
+
+          <div class="form-group row">
+            <label for="cod_remitente" class="col-md-2 col-form-label">Nif Empresa:</label>
+            <div class="col-md-5">
+              <!-- NIE / DNI / NIF EMPRESA pattern="([XYZ][0-9]{7}[A-Z]|[0-9]{8}[A-Z]|[ABCDEFGHJ][0-9]{8})" -->
+              <input type="text" class="form-control bg-light text-dark" id="cod_remitente" name="cod_remitente"
+                placeholder="nif" minlength="9" maxlength="9" required pattern="[ABCDEFGHJ][0-9]{8}">
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce un nif de empresa válido, 1 letra de la A-J seguido de 8
+                dígitos.
+              </div>
+            </div>
+            <div class="col-md-5">
+              <button type="button" id="bremescliente" name="bremescliente" class="btn btn-secondary">¿eres
+                cliente?</button>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="razon_social_remitente" class="col-md-2 col-form-label">Razon social:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="razon_social_remitente" name="razon_social_remitente"
+                placeholder="razon social" pattern="[0-9a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="75" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, espacios, o números. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="dir_remitente" class="col-md-2 col-form-label">Dir remitente:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="dir_remitente" name="dir_remitente"
+                placeholder="dirección remitente" minlength="3" maxlength="100" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor rellene este campo. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="cod_postal_remitente" class="col-md-2 col-form-label">Cod postal:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="cod_postal_remitente" name="cod_postal_remitente"
+                placeholder="cod postal" pattern="0[1-9][0-9]{3}|[1-4][0-9]{4}|5[0-2][0-9]{3}" minlength="5"
+                maxlength="5" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce un cod postal válido. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="municipio_remitente" class="col-md-2 col-form-label">Municipio:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="municipio_remitente" name="municipio_remitente"
+                placeholder="municipio" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="20" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, o espacios.</div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="provincia_remitente" class="col-md-2 col-form-label">Provincia:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="provincia_remitente" name="provincia_remitente"
+                placeholder="provincia" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="20" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, o espacios. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="telefono_remitente" class="col-md-2 col-form-label">Teléfono móvil:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="telefono_remitente" name="telefono_remitente"
+                placeholder="Teléfono móvil" pattern="6[0-9]{8}" minlength="9" maxlength="9" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce teléfono móvil válido. </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- campos bloque drcha -->
+        <div class="col-md-6 mt-md-3">
+
+          <div id="div_nombre_remitente" class="form-group row">
+            <label for="nombre_remitente" class="col-md-2 col-form-label">Nombre:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="nombre_remitente" name="nombre_remitente" placeholder="nombre"
+                pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="15" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor rellena este campo. </div>
+            </div>
+          </div>
+
+          <div id="div_apellidos_remitente" class="form-group row">
+            <label for="apellidos_remitente" class="col-md-2 col-form-label">Apellidos:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="apellidos_remitente" name="apellidos_remitente"
+                placeholder="apellidos" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="25" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor rellena este campo. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="email_remitente" class="col-md-2 col-form-label">Email:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="email_remitente" name="email_remitente" placeholder="email"
+                pattern="[a-zA-Z0-9_\.\-]+@[a-zA-Z_\-]+\.[a-zA-Z0-9\-]+" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce una dirección de email válida. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="ccc_remitente" class="col-md-2 col-form-label">Nº de cuenta:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="ccc_remitente" name="ccc_remitente" placeholder="nº de cuenta"
+                minlength="24" maxlength="24" pattern="ES[0-9]{22}" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce un nº de cuenta IBAN español válido. </div>
+            </div>
+          </div>
+
+          <div id="div_numtarjeta_remitente" class="form-group row">
+            <label for="numtarjeta_remitente" class="col-md-2 col-form-label">Nº de tarjeta:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="numtarjeta_remitente" name="numtarjeta_remitente"
+                placeholder="nº tarjeta" minlength="16" maxlength="16" pattern="[0-9]{16}" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce un nº de tarjeta válido. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="remitenteEScte" class="col-md-2 col-form-label">Remitente ES Cliente:</label>
+            <div class=" col-md-2 d-flex align-items-center">
+              <input type="checkbox" class="form-control" id="remitenteEScte" name="remitenteEScte" readonly>
+            </div>
+          </div>
+
+
+          <div id="div_modificardatosrte" class="form-group row">
+            <label for="modificardatosrte" class="col-md-2 col-form-label">Modificar datos Remitente:</label>
+            <div class=" col-md-2   d-flex align-items-center">
+              <input type="checkbox" class="form-control" id="modificardatosrte" name="modificardatosrte">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--  DATOS DESTINATARIO -->
+      <div class="row marginleft-10 marginright-10">
+        <div class="col d-flex align-items-center justify-content-start">
+          <p class="h2 text-dark">Datos destinatario</p>
+        </div>
+      </div>
+
+      <div class="row marginleft-10 marginright-10 border border-dark border-3 rounded ">
+
+        <!-- campos bloque izq -->
+        <div class="col-md-6 mt-md-3">
+
+          <div class="form-group row">
+            <label for="cod_destinatario" class="col-md-2 col-form-label">Nie/Dni/Nif:</label>
+            <div class="col-md-5">
+              <input type="text" class="form-control bg-light text-dark" id="cod_destinatario" name="cod_destinatario"
+                placeholder="nie/dni/nif" minlength="9" maxlength="9"
+                pattern="([XYZ][0-9]{7}[A-Z]|[0-9]{8}[A-Z]|[ABCDEFGHJ][0-9]{8})" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce un Nie, Dni o Nif de empresa válido. Ej Nie X1234567A.
+                Ej Dni 12345678A. Ej Nif empresa B12345678.</div>
+            </div>
+            <div class="col-md-5">
+              <button type="button" id="bdestescliente" name="bdestescliente" class="btn btn-secondary">¿es
+                cliente?</button>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="tipo_destinatario" class="col-md-2 col-form-label">Tipo:</label>
+            <div class="col-md-10">
+              <div class="row ml-4">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="dest_particular" name="tipo_destinatario"
+                    value="particular" required>
+                  <label class="form-check-label" for="dest_particular">Particular</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="dest_empresa" name="tipo_destinatario"
+                    value="empresa" required>
+                  <label class="form-check-label" for="dest_empresa">Empresa</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id='div_razon_social_destinatario' class="form-group row">
+            <label for="razon_social_destinatario" class="col-md-2 col-form-label">Razon social:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="razon_social_destinatario" name="razon_social_destinatario"
+                placeholder="razon social" pattern="[0-9a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="75" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, espacios, o números. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="dir_destinatario" class="col-md-2 col-form-label">Dir destinatario:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="dir_destinatario" name="dir_destinatario"
+                placeholder="dirección" minlength="3" maxlength="100" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor rellene este campo. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="cod_postal_destinatario" class="col-md-2 col-form-label">Cod postal:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="cod_postal_destinatario" name="cod_postal_destinatario"
+                placeholder="cod postal" pattern="0[1-9][0-9]{3}|[1-4][0-9]{4}|5[0-2][0-9]{3}" minlength="5"
+                maxlength="5" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce un cod postal válido. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="municipio_destinatario" class="col-md-2 col-form-label">Municipio:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="municipio_destinatario" name="municipio_destinatario"
+                placeholder="municipio" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="20" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, o espacios.</div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="provincia_destinatario" class="col-md-2 col-form-label">Provincia:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="provincia_destinatario" name="provincia_destinatario"
+                placeholder="provincia" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="20" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, o espacios.</div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="telefono_destinatario" class="col-md-2 col-form-label">Teléfono móvil:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="telefono_destinatario" name="telefono_destinatario"
+                placeholder="Telefono Móvil" pattern="6[0-9]{8}" minlength="9" maxlength="9" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce teléfono móvil válido. </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- campos bloque drcha -->
+        <div class="col-md-6 mt-md-3">
+
+          <div id="div_nombre_destinatario" class="form-group row">
+            <label for="nombre_destinatario" class="col-md-2 col-form-label">Nombre:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="nombre_destinatario" name="nombre_destinatario"
+                placeholder="nombre" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="15" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, o espacios.</div>
+            </div>
+          </div>
+
+          <div id="div_apellidos_destinatario" class="form-group row">
+            <label for="apellidos_destinatario" class="col-md-2 col-form-label">Apellido:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="apellidos_destinatario" name="apellidos_destinatario"
+                placeholder="apellidos" pattern="[a-zñáéíóúA-ZÑÁÉÍÓÚ ]+" minlength="3" maxlength="25" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce min 3 letras mayusc, minusc, o espacios.</div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="email_destinatario" class="col-md-2 col-form-label">Email:</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="email_destinatario" name="email_destinatario"
+                placeholder="email" pattern="[a-zA-Z0-9_\.\-]+@[a-zA-Z_\-]+\.[a-zA-Z0-9\-]+" required>
+              <div class="valid-feedback">Válido.</div>
+              <div class="invalid-feedback">Por favor introduce una dirección de email válida. </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="destinatarioEScte" class="col-md-2 col-form-label">Destinatario ES Cliente:</label>
+            <div class=" col-md-2 d-flex align-items-center">
+              <input type="checkbox" class="form-control" id="destinatarioEScte" name="destinatarioEScte" readonly>
+            </div>
+          </div>
+
+          <div id="div_modificardatosdest" class="form-group row">
+            <label for="modificardatosdest" class="col-md-2 col-form-label">Modificar datos destinatario:</label>
+            <div class=" col-md-2   d-flex align-items-center">
+              <input type="checkbox" class="form-control" id="modificardatosdest" name="modificardatosdest">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--  DATOS RECOGIDA -->
+      <div class="row marginleft-10 marginright-10">
+        <div class="col d-flex align-items-center justify-content-end">
+          <p class="h2 text-dark">Datos recogida</p>
+        </div>
+      </div>
+
+      <div class="row marginleft-10 marginright-10 border border-dark border-3 rounded ">
+
+        <div class="col-md">
+
+          <div class="ml-4 mt-2">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="recogida_domicilio" name="tipo_recogida"
+                value="domicilio_remitente" required>
+              <label class="form-check-label" for="recogida_domicilio">Domicilio</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="recogida_oficina" name="tipo_recogida" value="oficina"
+                required>
+              <label class="form-check-label" for="recogida_oficina">Oficina</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="recogida_citypaq" name="tipo_recogida" value="citypaq"
+                required>
+              <label class="form-check-label" for="recogida_citypaq">Citypaq</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="div_r_contenido_of_citypaq" class="col-md-9 mt-2">
+              <!-- DOM -->
+
+              <!-- DOM -->
+            </div>
+          </div>
+
+          <div id="div_r_dircompleta_of_citypaq" class="row">
+            <div class="col-md-9 mt-2">
+
+              <div class="form-group row">
+                <label for="r_cod_of_citypaq" class="col-md-2 col-form-label">Cod. Oficina/Citypaq:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="r_cod_of_citypaq" name="r_cod_of_citypaq" readonly>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="r_dir_of_citypaq" class="col-md-2 col-form-label">Direccion:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="r_dir_of_citypaq" name="r_dir_of_citypaq" disabled>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="r_cod_postal_of_citypaq" class="col-md-2 col-form-label">Cod postal:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="r_cod_postal_of_citypaq" name="r_cod_postal_of_citypaq"
+                    disabled>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="r_municipio_of_citypaq" class="col-md-2 col-form-label">Municipio:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="r_municipio_of_citypaq" name="r_municipio_of_citypaq"
+                    disabled>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="r_provincia_of_citypaq" class="col-md-2 col-form-label">Provincia:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="r_provincia_of_citypaq" name="r_provincia_of_citypaq"
+                    disabled>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mt-2">
+
+              <div class="form-group row">
+                <label for="dir_recogida" class="col-md-2 col-form-label">Dir recogida:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="dir_recogida" name="dir_recogida" minlength="3"
+                    maxlength="145" required>
+                  <div class="valid-feedback">Válido.</div>
+                  <div class="invalid-feedback">seleccionar el tipo de recogida.</div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="fecha_recogida" class="col-md-2 col-form-label">Fecha recogida:</label>
+                <div class="col-md-10">
+                  <input type="datetime-local" class="form-control" id="fecha_recogida" name="fecha_recogida" readonly
+                    required>
+                  <div class="valid-feedback">Válido.</div>
+                  <div class="invalid-feedback">seleccionar el tipo de recogida. </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--  DATOS ENTREGA -->
+      <div class="row marginleft-10 marginright-10">
+        <div class="col d-flex align-items-center justify-content-start">
+          <p class="h2 text-dark">Datos entrega</p>
+        </div>
+      </div>
+
+      <div class="row marginleft-10 marginright-10 border border-dark border-3 rounded ">
+        <div class="col-md">
+
+          <div class="ml-4 mt-2">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="entrega_domicilio" name="tipo_entrega"
+                value="domicilio_destinatario" required>
+              <label class="form-check-label" for="entrega_domicilio">Domicilio</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="entrega_oficina" name="tipo_entrega" value="oficina"
+                required>
+              <label class="form-check-label" for="entrega_oficina">Oficina</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="entrega_citypaq" name="tipo_entrega" value="citypaq"
+                required>
+              <label class="form-check-label" for="entrega_citypaq">Citypaq</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="div_e_contenido_of_citypaq" class="col-md-9 mt-2">
+              <!-- DOM -->
+
+              <!-- DOM -->
+            </div>
+          </div>
+
+          <div id="div_e_dircompleta_of_citypaq" class="row">
+            <div class="col-md-9 mt-2">
+
+              <div class="form-group row">
+                <label for="e_cod_of_citypaq" class="col-md-2 col-form-label">Cod. Oficina/Citypaq:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="e_cod_of_citypaq" name="e_cod_of_citypaq" readonly>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="e_dir_of_citypaq" class="col-md-2 col-form-label">Direccion:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="e_dir_of_citypaq" name="e_dir_of_citypaq" disabled>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="e_cod_postal_of_citypaq" class="col-md-2 col-form-label">Cod postal:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="e_cod_postal_of_citypaq" name="e_cod_postal_of_citypaq"
+                    disabled>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="e_municipio_of_citypaq" class="col-md-2 col-form-label">Municipio:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="e_municipio_of_citypaq" name="e_municipio_of_citypaq"
+                    disabled>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="e_provincia_of_citypaq" class="col-md-2 col-form-label">Provincia:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="e_provincia_of_citypaq" name="e_provincia_of_citypaq"
+                    disabled>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mt-2">
+
+              <div class="form-group row">
+                <label for="dir_entrega" class="col-md-2 col-form-label">Dir entrega:</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="dir_entrega" name="dir_entrega" minlength="3"
+                    maxlength="145" required>
+                  <div class="valid-feedback">Válido.</div>
+                  <div class="invalid-feedback">seleccionar el tipo de entrega.</div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="fecha_prevista_entrega" class="col-md-2 col-form-label">Fecha prevista entrega:</label>
+                <div class="col-md-10">
+                  <input type="datetime-local" class="form-control" id="fecha_prevista_entrega"
+                    name="fecha_prevista_entrega" required>
+                  <div class="valid-feedback">Válido.</div>
+                  <div class="invalid-feedback">seleccionar fecha y hora de entrega. </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--  DATOS PAQUETE -->
+      <div class="row marginleft-10 marginright-10">
+        <div class="col d-flex align-items-center justify-content-end">
+          <p class="h2 text-dark">Datos paquete</p>
+        </div>
+      </div>
+
+      <div class="row marginleft-10 marginright-10 border border-dark border-3 rounded ">
+        <div class="col-md">
+
+          <div class="row">
+            <div class="col-md-9 mt-2">
+              <h4><u>Embalaje</u></h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="div_embalaje" class="col-md-9 mt-2 ml-4">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="embalaje_caja" name="embalaje" value='caja' required>
+                <label class="form-check-label" for="embalaje_caja">Caja</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="embalaje_caja_botellas" name="embalaje"
+                  value="caja_botella" required>
+                <label class="form-check-label" for="embalaje_caja_botellas">Caja botellas</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="embalaje_sobres" name="embalaje" value="sobre"
+                  required>
+                <label class="form-check-label" for="embalaje_sobres">Sobre</label>
+              </div>
+              <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="radio" id="embalaje_rollo_tubo" name="embalaje" value="rollo_tubo"
+                  required>
+                <label class="form-check-label" for="embalaje_rollo_tubo">Rollo / tubo</label>
+              </div>
+              <div id="div_embalaje_valijas" class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="embalaje_valijas" name="embalaje" value="valija"
+                  required>
+                <label class="form-check-label" for="embalaje_valijas">Valija</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="div_tamaño_titulo" class="col-md-9 mt-2">
+              <h4><u>Tamaño</u></h4>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="div_tamaño_embalaje" class="col-md-9 mt-2 ml-4">
+              <!-- DOM -->
+
+              <!-- DOM -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="div_peso" class="col-md-9 mt-2">
+              <div class="form-group row">
+                <label for="peso" class="col-md-2 col-form-label">Peso:</label>
+                <div class="col-md-10">
+                  <input type="number" class="form-control" id="peso" name="peso" placeholder="peso" min="" max=""
+                    step="0.1" any required>
+                  <div class="valid-feedback">Válido.</div>
+                  <div class="invalid-feedback">Por favor introduce el peso en kg. Revisa el peso max del envío.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- campo oculto q se envia con valor por defecto -->
+          <div class="row">
+            <div id="div_cod_tipo_envio" class="col-md-9 mt-2 ml-3">
+              <!-- DOM -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="cod_tipo_envio" name="cod_tipo_envio" value="PAQPREM01"
+                  checked>
+                <label class="form-check-label" for="cod_tipo_envio">Paq premium </label>
+              </div>
+              <!-- DOM -->
+            </div>
+          </div>
+
+          <!-- campo oculto q se envia con valor por defecto -->
+          <div class="row">
+            <div id="div_tipo_remitente" class="col-md-9 mt-2 ml-3">
+              <!-- DOM -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="tipo_remitente" name="tipo_remitente" value="empresa"
+                  checked>
+                <label class="form-check-label" for="tipo_remitente">Empresa </label>
+              </div>
+              <!-- DOM -->
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- ENVIAR FORMULARIO -->
+      <div class="form-group row">
+        <div class="col mt-md-3 d-flex align-items-center justify-content-center">
+          <button type="submit" id="benviar" name="benviar" class="btn btn-primary">Enviar Formulario</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

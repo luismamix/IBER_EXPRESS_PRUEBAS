@@ -1,0 +1,258 @@
+<!--
+     Course: Maquetando con BootStrap 4
+     By: OpenWebinars.net
+     File: template.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Plantilla HTML con los enlaces necesarios para el resto del curso
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Utilidades Localizador Oficinas / Citypaq</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Course CSS -->
+  <link rel="stylesheet" href="../files/css/styles.css">
+
+  <script src="../files/js/localizador_of_citypaq.js"></script>
+  <script src="../files/js/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <!-- logo y encabezado página -->
+    <div class="row bg-general">
+
+      <div class="col mb-1 d-flex align-items-center justify-content-center">
+        <img id="logo-lima" src="../files/img/Logo lima blaster.svg" alt="" srcset="">
+      </div>
+
+      <div class="col mb-1 d-flex align-items-center justify-content-center">
+        <a class="text-general-lima" href="../particular/index_particular.html">
+          <h4>Particular</h4>
+        </a>
+        <a class="text-general-lima ml-4" href="../empresa/index_empresa.html">
+          <h4>Empresa</h4>
+        </a>
+      </div>
+
+      <div class="col mb-1 d-flex mr-4 align-items-center justify-content-center">
+        <ul class="fa-ul">
+          <h1 class="text-general-lima">Utilidades:</h1>
+          <li class="ml-5">
+            <span class="fa-li"><i style="font-size:38px;" class="fas fa-search text-general-lima"></i></span>
+            <h2 class="text-general-lima ml-4">Oficinas</h2>
+          </li>
+          <li class="ml-5">
+            <span class="fa-li"><i style="font-size:38px;" class="fas fa-search text-general-lima"></i></span>
+            <h2 class="text-general-lima ml-4">Citypaq</h2>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--  navegacion -->
+    <div class="row">
+      <div class="col bg-general-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-general-navbar">
+          <!-- <a class="navbar-brand h5" href="#">Iber Express</a> -->
+          <img id="logo-pequeño" src="../files/img/logo_pequeño_lima2.svg" alt="" srcset="" style="height: 38px;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-4" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item active">
+                <a class="nav-link h5" href="#">Home <span class="sr-only">(current)</span></a>
+              </li> -->
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle h5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Utilidades
+                </a>
+                <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="localizador_envios.html">Localizador de Envíos</a>
+                  <a class="dropdown-item" href="localizador_of_citypaq.html">Localizador de
+                    Oficinas</a>
+                  <a class="dropdown-item" href="localizador_of_citypaq.html">Localizador de
+                    Citypaqs</a>
+                  <a class="dropdown-item" href="localizador_cod_postal.html">Localizador de Cod.
+                    Postales</a>
+                  <a class="dropdown-item" href="embalajes.html">Embalajes</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- links -->
+    <!-- <div class="row bg-light">
+      <div class="col d-flex align-items-center justify-content-start">
+        <p class="h5 text-primary">
+          <a href="https://www.google.es/">Index</a>
+        </p>
+      </div>
+    </div> -->
+
+    <!--  DATOS LOCALIZADOR OFICINAS / CITYPAQS  -->
+
+    <!-- TITULO -->
+    <div class="row marginleft-10 marginright-10">
+      <div id="div_titulo" class="col d-flex align-items-center justify-content-center">
+        <i style="font-size:38px;" class="fas fa-building text-general"></i>
+        <p class="h2 text-general ml-3">Oficinas</p>
+        <p class="h2 text-general ml-3 mr-3">/</p>
+        <i style="font-size:38px;" class="fas fa-border-all text-general"></i>
+        <p class="h2 text-general ml-3">Citypaq</p>
+      </div>
+    </div>
+
+    <!--  CONTENEDOR BORDE GRUESO -->
+    <div class="row marginleft-10 marginright-10 border border-general border-3 rounded ">
+      <div class="col mt-md-3">
+
+        <!--  CAMPOS BUSQUEDA -->
+        <div class="form-group row">
+
+          <div class="col-md-6">
+            <div class="row">
+
+              <label class="col-md-2 col-form-label" for="tipo">Tipo:</label>
+              <div class="col-md-4">
+                <select class="form-control" id="tipo">
+                  <option value="OFICINA">Oficina</option>
+                  <option value="CITYPAQ">Citypaq</option>
+                </select>
+              </div>
+
+              <label class="col-md-2 col-form-label" for="buscarpor">Buscar por:</label>
+              <div class="col-md-4">
+                <select class="form-control" id="buscarpor">
+                  <option value="cod_postal">Cod postal</option>
+                  <option value="cod_of_citypaq">Cod. Of_Citypaq</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+
+              <div class="col-md-10">
+                <input type="text" class="form-control bg-light text-dark" id="entrada" placeholder="Cod Postal"
+                  minlength="5" maxlength="9">
+                <div id='div_err' class='alert alert-warning mt-3'></div>
+              </div>
+
+              <div class="col-md-2">
+                <button type="button" id="buscar" class="btn btn-secondary">Buscar</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DOM - TABLA RESULTADO  -->
+        <div id="div_l_tabla_resultado_busqueda" class="row">
+          <div class="col-md-6 mt-2"></div>
+          <div class="col-md-6 mt-2" id='div_l_resultado_busqueda'>
+            <!--  <div id='div_r_err' class='alert alert-warning'></div> -->
+            <table id='l_tabla_resultado_busqueda' class='table table-lima table-responsive rounded'>
+              <thead>
+                <tr>
+                  <th id='th_cod_of_citypaq'>Cod Oficina</th>
+                  <th>Direccion</th>
+                  <th>Cod Postal</th>
+                  <th>Municipio</th>
+                  <th>Provincia</th>
+                  <th>Tipo</th>
+                  <th>Teléfono</th>
+                  <th>Horario</th>
+                  <th>Descripcion</th>
+                  <th>Seleccionar</th>
+                </tr>
+              </thead>
+              <tbody id='l_tabla_tbody_filas'>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TITULO DETALLES OF / CITYPAQ   -->
+        <div id="div_r_titulo2" class="row marginleft-10 marginright-10">
+          <div id="div_titulo2" class="col d-flex align-items-center justify-content-center">
+            <i style='font-size:38px;' class='fas fa-info-circle text-general'></i>
+            <p class="h2 text-general ml-3">Detalles Oficina / Citypaq</p>
+          </div>
+        </div>
+
+        <!-- DETALLES -->
+        <div id='div_detalles'
+          class="row mb-md-3 marginleft-10 marginright-10 border bg-general border-general border-3 rounded ">
+          <div class="col-md-6 mt-md-3">
+            <ul class="list-unstyled">
+              <li><span class="text-general-lima"><strong>Cod_Of_Citypaq: </strong></span><span class="text-white"
+                  id="i_cod_of_citypaq"></span></li>
+              <li><span class="text-general-lima"><strong>Descripción: </strong></span><span class="text-white"
+                  id="i_descripcion"></span></li>
+              <li><span class="text-general-lima"><strong>Teléfono: </strong></span><span class="text-white"
+                  id="i_telefono"></span></li>
+              <li><span class="text-general-lima"><strong>Horario: </strong></span><span class="text-white"
+                  id="i_horario"></span></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mt-md-3">
+            <ul class="list-unstyled">
+              <li><span class="text-general-lima"><strong>Dirección: </strong></span><span class="text-white"
+                  id="i_direccion"></span></li>
+              <li><span class="text-general-lima"><strong>Municipio: </strong></span><span class="text-white"
+                  id="i_municipio"></span></li>
+              <li><span class="text-general-lima"><strong>Cod Postal: </strong></span><span class="text-white"
+                  id="i_cod_postal"></span></li>
+              <li><span class="text-general-lima"><strong>Provincia: </strong></span><span class="text-white"
+                  id="i_provincia"></span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
